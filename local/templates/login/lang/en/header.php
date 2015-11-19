@@ -1,0 +1,13 @@
+<?
+$MESS["BITRIX24_MOTTO"] = "Shop for sport";
+$MESS["BITRIX24_URL"] = "http://localhost:8082";
+$MESS["BITRIX24_TITLE"] = "El deporte";
+$MESS["BITRIX24_LANG_INTERFACE"] = "Language";
+$MESS["BITRIX24_LANG_RU"] = "Russian";
+$MESS["BITRIX24_LANG_EN"] = "English";
+$MESS["BITRIX24_LANG_DE"] = "Deutsch";
+$MESS["BITRIX24_LANG_UA"] = "Ukrainian";
+$MESS["BITRIX24_LANG_LA"] = "Spanish";
+$MESS["BITRIX24_COPYRIGHT"] = "#CURRENT_YEAR#";
+$MESS["BITRIX24_COPYRIGHT_B24"] = "#CURRENT_YEAR#";
+?>
