@@ -7,18 +7,22 @@
         <div>
             <div>
                 <!-- sub featured title -->
-                <h3>ABOUT</h3>
+                <h3>О НАС:</h3>
                 <div class="clear"></div>
                 <!-- text-->
                             <span>
-                                The INCORPORATE layout has been designed with responsive, future-proof websites in mind.
-                            </span>
-                            <span>
-                                It supports all of the content you can dream up, including image galleries, advertisement units, all function HTML elements, and lots lots more!
-							</span>
-                            <span>
-                                If you're looking for a template to start building your own next site with, this is a great place to start!
- 	                        </span>
+                                    <?$APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "COMPONENT_TEMPLATE" => ".default",
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_SUFFIX" => "inc",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => SITE_TEMPLATE_PATH."/include_areas/about.php"
+                                        )
+                                    );?>
+                                </span>
             </div>
         </div>
     </div>
@@ -26,23 +30,71 @@
         <div>
             <div>
                 <!-- sub featured title -->
-                <h3>MOST VIEWED</h3>
+                <h3>ПОПУЛЯРНОЕ СЕЙЧАС:</h3>
                 <div class="clearfix"></div>
                 <!-- list with image -->
                 <ul>
                     <li>
 
+<<<<<<< HEAD
                         <span><a href="#">There are many variations of passages of Lorem Ipsum available.</a></span>
+=======
+                        <span>
+                                    <?$APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "COMPONENT_TEMPLATE" => ".default",
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_SUFFIX" => "inc",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => SITE_TEMPLATE_PATH."/include_areas/1_popular_link.php"
+                                        )
+                                    );?>
+                                </span>
+>>>>>>> lab2-3
 
                     </li>
                     <li>
 
+<<<<<<< HEAD
                         <span><a href="#">There are many variations of passages of Lorem Ipsum available.</a></span>
+=======
+                          <span>
+                                    <?$APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "COMPONENT_TEMPLATE" => ".default",
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_SUFFIX" => "inc",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => SITE_TEMPLATE_PATH."/include_areas/2_popular_link.php"
+                                        )
+                                    );?>
+                                </span>
+>>>>>>> lab2-3
 
                     </li>
                     <li>
 
+<<<<<<< HEAD
                         <span><a href="#">There are many variations of passages of Lorem Ipsum available.</a></span>
+=======
+                         <span>
+                                    <?$APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "COMPONENT_TEMPLATE" => ".default",
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_SUFFIX" => "inc",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => SITE_TEMPLATE_PATH."/include_areas/3_popular_link.php"
+                                        )
+                                    );?>
+                                </span>
+>>>>>>> lab2-3
 
                     </li>
                 </ul>
@@ -54,7 +106,7 @@
         <div>
             <div>
                 <!-- sub featured title -->
-                <h3>CONTACT INFO</h3>
+                <h3>КОНТАКТЫ:</h3>
                 <div class="clear"></div>
                 <!-- text-->
                             <span>

@@ -57,100 +57,7 @@
 <!--body-->
 <body>
 <?$APPLICATION->ShowPanel();?>
-<!--background changer-->
-<div id="background_changer">
-    <div class="alignleft_block backgrounds">
-        <ul id="theme_roller_list">
-            <li><a href="#">Color</a>
-                <div>
-                    <span id="color_picker" class="alignleft_block"></span>
-                </div>
-            </li>
-            <li><a href="#">Pattern</a>
-                <div id="background_patterns">
-                    <a href="0"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_0.png" width="24" height="24" alt=""/></a>
-                    <a href="1"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_1.png" width="24" height="24" alt=""/></a>
-                    <a href="2"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_2.png" width="24" height="24" alt=""/></a>
-                    <a href="3"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_3.png" width="24" height="24" alt=""/></a>
-                    <a href="4"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_4.png" width="24" height="24" alt=""/></a>
-                    <a href="5"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_5.png" width="24" height="24" alt=""/></a>
-                    <a href="6"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_6.png" width="24" height="24" alt=""/></a>
-                    <a href="7"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_7.png" width="24" height="24" alt=""/></a>
-                    <a href="8"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_8.png" width="24" height="24" alt=""/></a>
-                    <a href="9"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_9.png" width="24" height="24" alt=""/></a>
-                    <a href="10"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_10.png" width="24" height="24" alt=""/></a>
-                    <a href="11"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_11.png" width="24" height="24" alt=""/></a>
-                    <a href="12"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_12.png" width="24" height="24" alt=""/></a>
-                    <a href="13"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/page_tile_13.png" width="24" height="24" alt=""/></a>
-                </div>
-            </li>
-            <li><a href="#">Background</a>
-                <div id="background_images">
-                    <a href="1"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/bg01.jpg" width="154" alt=""/></a>
-                    <a href="2"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/bg02.jpg" width="154" alt=""/></a>
-                    <a href="3"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/bg03.jpg" width="154" alt=""/></a>
-                    <a href="4"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/bg04.jpg" width="154" alt=""/></a>
-                    <a href="5"><img src="<?=SITE_TEMPLATE_PATH;?>/images/background/bg05.jpg" width="154" alt=""/></a>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="alignleft_block open_close">
-        <a href="#" class="arrow">OPEN</a>
-    </div>
-</div>
-<!--/background changer-->
-<!--sliding login panel-->
-<div id="login_panel">
-    <div id="content">
-        <div>
-            <div class="column column1">
-                <!--help text, maybe-->
-                <h3>And now some Lorem Ipsum to fill the content</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent scelerisque commodo massa. Ut volutpat. Maecenas luctus augue quis velit.
-                </p>
-                <p>
-                    Ut volutpat. Maecenas luctus augue quis velit. Lorem ipsum dolor sit amet, adipiscing elit. Scelerisque commodo massa.
-                </p>
-                <p>
-                    <a href="#" class="orange-only notextdecoration">Not a member yet? Sign Up</a>
-                </p>
-                <!--/help text, maybe-->
-            </div>
 
-            <div class="column column2">
-                <!--user signin-->
-                <h3>Member Login</h3>
-                <form name="contact_form" id="contact_form" class="generic-form alignleft_block" action="<?=SITE_TEMPLATE_PATH;?>/contact.html">
-                    <p>
-                        <input type="text" name="txt_name" id="txt_name" class="validate[required] medium-login user margin-right-10" />
-                        <input type="text" name="txt_email" id="txt_email" class="validate[required] medium-login password" />
-                    </p>
-                    <div class="clear10"></div>
-                    <p>
-                        <input type="checkbox" id="chk_rememberme" name="chk_rememberme" /><label for="chk_rememberme">Remember Me</label>
-                        &nbsp;/&nbsp;
-                        <a href="#" class="orange-only notextdecoration">Forgot Password?</a>
-                    </p>
-
-                    <div class="clear"></div>
-
-                    <a href="#" class="button alignleft_block bold_only notextdecoration" id="btnLoginNow"><span>Login Now</span></a>
-
-                </form>
-                <!--/user login-->
-            </div>
-        </div>
-    </div>
-    <div id="signin_register">
-        <ul>
-            <li>Hello Guest!</li>
-            <li><a href="#">&nbsp;</a></li>
-        </ul>
-    </div>
-</div>
-<!--/sliding login panel-->
 
 <div id="body-wrapper">
 
@@ -282,9 +189,28 @@
             </div>
             <!--/nivo slider-->
         </div>
-        <div id="slider3-caption-0" class="nivo-html-caption"><h1>THIS IS THE TITLE</h1><p>You can add captions too</p></div>
-        <div id="slider3-caption-1" class="nivo-html-caption"><h1>THIS IS THE TITLE</h1><p>You can add captions too</p></div>
-
+        <div id="slider3-caption-0" class="nivo-html-caption"><?$APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                Array(
+                    "COMPONENT_TEMPLATE" => ".default",
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "inc",
+                    "EDIT_TEMPLATE" => "",
+                    "PATH" => SITE_TEMPLATE_PATH."/include_areas/text_for_slide0.php"
+                )
+            );?></div>
+        <div id="slider3-caption-1" class="nivo-html-caption"><?$APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                Array(
+                    "COMPONENT_TEMPLATE" => ".default",
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "inc",
+                    "EDIT_TEMPLATE" => "",
+                    "PATH" => SITE_TEMPLATE_PATH."/include_areas/text_for_slide2.php"
+                )
+            );?></div>
         <!-- /carousel -->
 
         <div class="clear40"></div>
