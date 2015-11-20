@@ -1,4 +1,25 @@
 <?
 $aMenuLinks = Array(
+	Array(
+		"GGGfsdfsdfsdgs", 
+		"/goods/dsfsdf/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"gsdsdg", 
+		"", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"dfgdgd", 
+		"", 
+		Array(), 
+		Array(), 
+		"" 
+	)
 );
 ?>

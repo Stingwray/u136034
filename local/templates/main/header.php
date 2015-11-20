@@ -97,65 +97,25 @@
                 <li><a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/social_icons/v.png" width="30" height="27" alt="" /></a></li>
             </ul>
             <!-- /social tabs-->
-
-            <!--menu-->
-            <ul id="top_menu" class="sf-menu">
-                <li><a href="index.html">HOME</a><span>Get Started</span></li>
-                <li><a href="<?=SITE_TEMPLATE_PATH;?>/all_elements.html">FEATURES</a><span>Skins &amp; Font Stacks</span>
-                    <!--first level dropdown menu-->
-                    <ul>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/all_elements.html">Elements</a></li>
-                    </ul>
-                    <!--/first level dropdown menu-->
-                </li>
-                <li><a href="<?=SITE_TEMPLATE_PATH;?>/about.html">PAGES</a><span>Customized Pages</span>
-                    <!--first level dropdown menu-->
-                    <ul>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/about.html">Company Info</a></li>
-                        <li><a href="#">Test Sub Menu</a>
-                            <!--second level dropdown menu-->
-                            <ul>
-                                <li><a href="#">Menu Item #1</a></li>
-                                <li><a href="#">Menu Item #2</a></li>
-                            </ul>
-                            <!--/second level dropdown menu-->
-                        </li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/news.html">News &amp; Announcements</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/services.html">Services</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/ourteam.html">Our Team</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/ourpartners.html">Our Partners</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/testimonials.html">Testimonials</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/job.html">Job Opportunities</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/faq.html">FAQ</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/404.html">404 Page Not Found</a></li>
-                    </ul>
-                    <!--/first level dropdown menu-->
-                </li>
-                <li><a href="<?=SITE_TEMPLATE_PATH;?>/portfolio_1column.html">PORTFOLIO</a><span>View Our Works</span>
-                    <!--first level dropdown menu-->
-                    <ul>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/portfolio_4column_gallery_quicksand.php">4 Column Gallery (Quicksand Enabled)</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/portfolio_4column_gallery.html">4 Column Gallery</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/portfolio_3column_gallery.html">3 Column Gallery</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/portfolio_3column_portrait.html">3 Column Portraits</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/portfolio_2column_gallery.html">2 Column Gallery</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/portfolio_1column.html">1 Column Gallery</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/portfolio_1column_portrait.html">1 Column Portraits</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/project-details.html">Portfolio Details</a></li>
-                    </ul>
-                    <!--/first level dropdown menu-->
-                </li>
-                <li><a href="<?=SITE_TEMPLATE_PATH;?>/blog.html">BLOG</a><span>See Blog Posts</span>
-                    <!--first level dropdown menu-->
-                    <ul>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/blog.html">Posts</a></li>
-                        <li><a href="<?=SITE_TEMPLATE_PATH;?>/blog-post.html">Single Post</a></li>
-                    </ul>
-                    <!--/first level dropdown menu-->
-                </li>
-                <li><a href="<?=SITE_TEMPLATE_PATH;?>/contact.html">CONTACT</a><span>Say Hello!</span></li>
-            </ul>
-            <!-- /menu-->
+            <?$APPLICATION->IncludeComponent(
+	"bitrix:menu", 
+	"top_menu", 
+	array(
+		"COMPONENT_TEMPLATE" => "top_menu",
+		"ROOT_MENU_TYPE" => "top",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MAX_LEVEL" => "2",
+		"CHILD_MENU_TYPE" => "left",
+		"USE_EXT" => "Y",
+		"DELAY" => "N",
+		"ALLOW_MULTI_SELECT" => "N"
+	),
+	false
+);?><br>
 
             <!--search box-->
             <div id="search_box">
