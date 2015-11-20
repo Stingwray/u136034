@@ -99,7 +99,7 @@ body,textarea,input,select{
 /*header container & header & logo*/
 #header-contanier{
 	width:100%;
-	height:145px;
+	height:160px;
 	background:url(../images/transparent_background.png) repeat-x bottom;
 	margin-top:26px; /*set this value to 20px when you not need to use login panel*/
 	float:left;
@@ -249,7 +249,7 @@ body,textarea,input,select{
 /*top search bar*/
 #search_box{
 	float:right;
-	margin:13px 0 0 0;
+	margin:19px 0 0 0;
 	width:190px;
 }
 #search_box .txt_search{
