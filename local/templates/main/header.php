@@ -187,8 +187,6 @@
             <ul id="social_tabs">
                 <li><a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/social_icons/t.png" width="30" height="27" alt="" /></a></li>
                 <li><a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/social_icons/f.png" width="30" height="27" alt="" /></a></li>
-                <li><a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/social_icons/o.png" width="30" height="27" alt="" /></a></li>
-                <li><a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/social_icons/s.png" width="30" height="27" alt="" /></a></li>
                 <li><a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/images/social_icons/v.png" width="30" height="27" alt="" /></a></li>
             </ul>
             <!-- /social tabs-->

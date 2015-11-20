@@ -31,14 +31,19 @@
                 <!-- list with image -->
                 <ul>
                     <li>
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/temp/bullet_list1.jpg" alt="" width="55" height="55" />
+
                         <span><a href="#">There are many variations of passages of Lorem Ipsum available.</a></span>
-                        <span class="times-gray-italic-13">November 26th, 2011</span>
+
                     </li>
                     <li>
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/images/temp/bullet_list2.jpg" alt="" width="55" height="55" />
+
                         <span><a href="#">There are many variations of passages of Lorem Ipsum available.</a></span>
-                        <span class="times-gray-italic-13">November 26th, 2011</span>
+
+                    </li>
+                    <li>
+
+                        <span><a href="#">There are many variations of passages of Lorem Ipsum available.</a></span>
+
                     </li>
                 </ul>
                 <!-- /list with image -->
