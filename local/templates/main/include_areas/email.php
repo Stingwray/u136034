@@ -1,1 +1,1 @@
-Email: <a href="#">mrqaz95@mail.ru</a>
+Наша почта: <a href="#">mrqaz95@mail.ru</a>

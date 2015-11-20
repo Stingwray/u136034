@@ -849,7 +849,7 @@ a.login-create-promo-cod-link {
 }
 
 .login-btn {
-	background: #2fc6f7;color: #fff;
+	background: #F3F376;color: #B50F0F;
 	display: inline-block;
 	outline: none !important;
 	border: none;
@@ -877,11 +877,11 @@ a.login-btn {
 	padding-top: 0;
 }
 
-.login-btn:hover  {background: #1ab8eb;color: #fff;}
-.login-btn:active {background: #1a83bf;color: #fff;}
+.login-btn:hover  {background: #F3F376;color: #FF0000;}
+.login-btn:active {background: #F3F376;color: #1A00FF;}
 
 .login-btn.wait {
-	background:#13b1e3 url(images/ld_blue.gif) center no-repeat;
+	background:#F3F376 url(images/ld_blue.gif) center no-repeat;
 	background-size: auto 70% !important;
 	color: rgba(0,0,0,0);
 }
