@@ -22,6 +22,13 @@
 /* ----------------------------------------------------
 	GLOBAL STRUCTURE
 ------------------------------------------------------- */
+#korzina
+{
+	float:right;
+	color:#fff;
+
+
+}
 /*html*/
 html{
 	height:100%;
@@ -211,7 +218,7 @@ body,textarea,input,select{
 	font-size:11px !important;
 	display:inline-block;
 	float:right;
-	margin:20px 0 0 0px;
+	margin:20px 20px 0 0px;
 }
 
 /*footer menu*/
@@ -249,7 +256,7 @@ body,textarea,input,select{
 /*top search bar*/
 #search_box{
 	float:right;
-	margin:19px 0 0 0;
+	margin:20px 0 0 0;
 	width:190px;
 }
 #search_box .txt_search{

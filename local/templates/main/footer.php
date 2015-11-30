@@ -1,5 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 ?>
+<?IncludeTemplateLangFile(__FILE__);?>
 
 <!-- three box footer-->
 <div class="box-three-sub-wrapper transparent-background">
@@ -99,7 +100,7 @@
                 <!-- text-->
                             <span>
                                 <!--<p> for ie 7 fix. works well with others too-->
-                                <span>
+                                <span><?=GetMessage("PHONE");?>:
                                     <?$APPLICATION->IncludeComponent(
                                         "bitrix:main.include",
                                         "",
@@ -112,7 +113,8 @@
                                         )
                                     );?>
                                 </span>
-                                <span> <?$APPLICATION->IncludeComponent(
+                                <span> <?=GetMessage("FAX");?>:
+                                    <?$APPLICATION->IncludeComponent(
                                         "bitrix:main.include",
                                         "",
                                         Array(
@@ -123,7 +125,8 @@
                                             "PATH" => SITE_TEMPLATE_PATH."/include_areas/fax.php"
                                         )
                                     );?></span>
-                                <span> <?$APPLICATION->IncludeComponent(
+                                <span><?=GetMessage("EMAIL");?>:
+                                    <?$APPLICATION->IncludeComponent(
                                         "bitrix:main.include",
                                         "",
                                         Array(

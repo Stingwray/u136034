@@ -2,7 +2,7 @@
 $aMenuLinks = Array(
 	Array(
 		"Каталог", 
-		"/goods/", 
+		"/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -22,8 +22,15 @@ $aMenuLinks = Array(
 		"CBXFeatures::IsFeatureEnabled('CommonDocuments')" 
 	),
 	Array(
-		"Магазины", 
-		"/shops/", 
+		"Форум", 
+		"/forum.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Помощь", 
+		"/help/", 
 		Array(), 
 		Array(), 
 		"" 

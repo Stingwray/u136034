@@ -881,7 +881,7 @@ a.login-btn {
 .login-btn:active {background: #F3F376;color: #1A00FF;}
 
 .login-btn.wait {
-	background:#F3F376 url(images/ld_blue.gif) center no-repeat;
+	background:#F3F376  center no-repeat;
 	background-size: auto 70% !important;
 	color: rgba(0,0,0,0);
 }

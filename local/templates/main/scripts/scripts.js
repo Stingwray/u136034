@@ -76,7 +76,7 @@ $(document).ready(function() {
 		}
 	);
 
-	$('<a href="#top" id="top_link"><img src="http://localhost:8082/upload/iblock/bbb/top.png" width="30" height="30"/></a>').appendTo('body');
+	$('<a href="#top" id="top_link"><img src="http://localhost:8082/upload/iblock/1a8/top.png" width="30" height="30"/></a>').appendTo('body');
 	$("#top_link").click(function(){ $('html, body').animate({scrollTop:0}, 'slow');return false; });
 		
 });

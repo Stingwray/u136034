@@ -12,9 +12,6 @@
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/reset.css",true);?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css",true);?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/default.css",true);?>
-    <!--[if lte IE 7]>
-     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/ie7.css",true);?>
-    <![endif]-->
 
     <!--jquery library-->
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/scripts/jquery-1.7.1.min.js", true);?>
@@ -59,10 +56,39 @@
 <?$APPLICATION->ShowPanel();?>
 
 
+
 <div id="body-wrapper">
 
     <!--header container-->
     <div id="header-contanier">
+        <div id="korzina">
+            <?$APPLICATION->IncludeComponent(
+	"bitrix:sale.basket.basket.line", 
+	"template1", 
+	array(
+		"COMPONENT_TEMPLATE" => "template1",
+		"PATH_TO_BASKET" => SITE_DIR."korzina.php",
+		"SHOW_NUM_PRODUCTS" => "Y",
+		"SHOW_TOTAL_PRICE" => "Y",
+		"SHOW_EMPTY_VALUES" => "Y",
+		"SHOW_PERSONAL_LINK" => "N",
+		"PATH_TO_PERSONAL" => SITE_DIR."personal/",
+		"SHOW_AUTHOR" => "N",
+		"PATH_TO_REGISTER" => SITE_DIR."login/",
+		"PATH_TO_PROFILE" => SITE_DIR."personal/",
+		"SHOW_PRODUCTS" => "N",
+		"POSITION_FIXED" => "N",
+		"SHOW_DELAY" => "Y",
+		"SHOW_NOTAVAIL" => "N",
+		"SHOW_SUBSCRIBE" => "N",
+		"SHOW_IMAGE" => "Y",
+		"SHOW_PRICE" => "Y",
+		"SHOW_SUMMARY" => "Y",
+		"PATH_TO_ORDER" => SITE_DIR."personal/order/make/"
+	),
+	false
+);?><br>
+        </div>
 
         <!--header wrapper-->
         <div id="header" class="center-clear">
@@ -83,12 +109,13 @@
                     );?>
                     <?if(!CSite::InDir('/')):?></a><?endif;?>
             </div>
-            <!-- /logo-->
 
+            <!-- /logo-->
 
 
             <!--header place holder-->
             <div class="header-place-holder"></div>
+
 
             <!--social tabs-->
             <?$APPLICATION->IncludeComponent("bitrix:news.list", "social", Array(
@@ -162,7 +189,7 @@
 		"MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
 			0 => "",
 		),
-		"MAX_LEVEL" => "2",	// Уровень вложенности меню
+		"MAX_LEVEL" => "1",	// Уровень вложенности меню
 		"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
 		"USE_EXT" => "Y",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
 		"DELAY" => "N",	// Откладывать выполнение шаблона меню
@@ -246,44 +273,14 @@
 	),
 	false
 );?>
-           <!--nivo slider
-            <div class="theme-default">
-                <div class="ribbon"></div>
-                <div id="slider3" class="nivoSlider">
-                    <a href="<?=SITE_TEMPLATE_PATH;?>/all_elements.html"><img src="<?=SITE_TEMPLATE_PATH;?>/images/temp/slider0.jpg" width="970" height="360" alt="" title="#slider3-caption-0"/></a>
-                    <a href="<?=SITE_TEMPLATE_PATH;?>/about.html"><img src="<?=SITE_TEMPLATE_PATH;?>/images/temp/slider1.jpg" width="970" height="360" alt=""/></a>
-                    <a href="<?=SITE_TEMPLATE_PATH;?>/portfolio_4column_gallery.html"><img src="<?=SITE_TEMPLATE_PATH;?>/images/temp/slider2.jpg" width="970" height="360" alt="" title="#slider3-caption-1"/></a>
-                    <a href="<?=SITE_TEMPLATE_PATH;?>/blog.html"><img src="<?=SITE_TEMPLATE_PATH;?>/images/temp/slider3.jpg" width="970" height="360" alt="" /></a>
-                </div>
-            </div>
-            -->
+
+
         </div>
-        <div id="slider3-caption-0" class="nivo-html-caption"><?$APPLICATION->IncludeComponent(
-                "bitrix:main.include",
-                "",
-                Array(
-                    "COMPONENT_TEMPLATE" => ".default",
-                    "AREA_FILE_SHOW" => "file",
-                    "AREA_FILE_SUFFIX" => "inc",
-                    "EDIT_TEMPLATE" => "",
-                    "PATH" => SITE_TEMPLATE_PATH."/include_areas/text_for_slide0.php"
-                )
-            );?></div>
-        <div id="slider3-caption-1" class="nivo-html-caption"><?$APPLICATION->IncludeComponent(
-                "bitrix:main.include",
-                "",
-                Array(
-                    "COMPONENT_TEMPLATE" => ".default",
-                    "AREA_FILE_SHOW" => "file",
-                    "AREA_FILE_SUFFIX" => "inc",
-                    "EDIT_TEMPLATE" => "",
-                    "PATH" => SITE_TEMPLATE_PATH."/include_areas/text_for_slide2.php"
-                )
-            );?></div>
+
         <!-- /carousel -->
 
         <div class="clear40"></div>
 
-        <!— start main content —>
+        <!-- start main content-->
         <div class="main-content pt-alt">
             <div class="containit">
